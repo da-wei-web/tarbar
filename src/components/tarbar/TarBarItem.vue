@@ -9,7 +9,7 @@
 
 <script>
   export default {
-    name: 'TarBarItem',
+    name: 'TarBarItem'
   }
 </script>
 
@@ -26,6 +26,9 @@
     text-align: center;
     color: #333;
   }
+  .tar-bar-item > a:hover{
+    color: red;
+  }
   span{
     display: inherit;
   }
@@ -39,5 +42,5 @@
     padding-bottom: .03rem;
     font-size: .12rem;
   }
-
+  
 </style>

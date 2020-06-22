@@ -2,26 +2,26 @@
   <div id="app">
     <tar-bar>
       <tar-bar-item>
-        <template  v-slot:slot-icon>
+        <template v-slot:slot-icon>
           <span class="iconfont icon-wodezhiwei"></span>
         </template>
-        <template  v-slot:slot-text>
+        <template v-slot:slot-text>
           <span class="text">职位</span>
         </template>
       </tar-bar-item>
       <tar-bar-item>
-        <template  v-slot:slot-icon>
+        <template v-slot:slot-icon>
           <span class="iconfont icon-gongsimingcheng"></span>
         </template>
-        <template  v-slot:slot-text>
+        <template v-slot:slot-text>
           <span class="text">公司</span>
         </template>
       </tar-bar-item>
       <tar-bar-item>
-        <template  v-slot:slot-icon>
+        <template v-slot:slot-icon>
           <span class="iconfont icon-xiaoxi"></span>
         </template>
-        <template  v-slot:slot-text>
+        <template v-slot:slot-text>
           <span class="text">消息</span>
         </template>
       </tar-bar-item>
