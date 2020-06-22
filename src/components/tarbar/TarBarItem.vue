@@ -24,6 +24,7 @@
     width: 100%;
     height: 100%;
     text-align: center;
+    color: #333;
   }
   span{
     display: inherit;
@@ -37,7 +38,6 @@
     width: 100%;
     padding-bottom: .03rem;
     font-size: .12rem;
-    color: #333;
   }
 
 </style>

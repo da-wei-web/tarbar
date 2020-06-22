@@ -11,26 +11,26 @@
       </tar-bar-item>
       <tar-bar-item>
         <template  v-slot:slot-icon>
-          <span class="iconfont icon-wodezhiwei"></span>
+          <span class="iconfont icon-gongsimingcheng"></span>
         </template>
         <template  v-slot:slot-text>
-          <span class="text">职位</span>
+          <span class="text">公司</span>
         </template>
       </tar-bar-item>
       <tar-bar-item>
         <template  v-slot:slot-icon>
-          <span class="iconfont icon-wodezhiwei"></span>
+          <span class="iconfont icon-xiaoxi"></span>
         </template>
         <template  v-slot:slot-text>
-          <span class="text">职位</span>
+          <span class="text">消息</span>
         </template>
       </tar-bar-item>
       <tar-bar-item>
         <template  v-slot:slot-icon>
-          <span class="iconfont icon-wodezhiwei"></span>
+          <span class="iconfont icon-wode"></span>
         </template>
         <template  v-slot:slot-text>
-          <span class="text">职位</span>
+          <span class="text">我的</span>
         </template>
       </tar-bar-item>
     </tar-bar>
