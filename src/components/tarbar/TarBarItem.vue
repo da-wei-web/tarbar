@@ -1,15 +1,50 @@
 <template>
-  <li class="tar-bar-item">
+  <li class="tar-bar-item" @click="handleClick">
     <a href="#">
-      <slot name="slot-icon"></slot>
-      <slot name="slot-text"></slot>
+      <div :style="activeStyle">
+        <slot name="slot-icon"></slot>
+      </div>
+      <div :style="activeStyle">
+        <slot name="slot-text"></slot>
+      </div>
     </a>
   </li>  
 </template>
 
 <script>
   export default {
-    name: 'TarBarItem'
+    name: 'TarBarItem',
+    // 动态传值
+    props: {
+      path: String,
+      activeColor: {
+        type: String,
+        default: 'red'
+      }
+    },
+    data(){
+      return {
+      }
+    },
+    computed: {
+      isActive(){
+        // 可以用indexOf() 不等于
+        // return this.$route.path.indexOf(this.path)!==-1;
+        // includes() 返回true或者false
+        return this.$route.path.includes(this.path);
+      },
+      activeStyle(){
+        return this.isActive ? {color: this.activeColor} : {};
+      }
+    },
+    methods: {
+      handleClick(){
+        // 可以通过修改url实现路由跳转。
+        this.$router.push(this.path).catch(err => {
+          console.log('错误', err);
+        });
+      }
+    }
   }
 </script>
 
@@ -25,9 +60,6 @@
     height: 100%;
     text-align: center;
     color: #333;
-  }
-  .tar-bar-item > a:hover{
-    color: red;
   }
   span{
     display: inherit;
